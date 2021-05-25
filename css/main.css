@@ -394,30 +394,4 @@ button.myBtn:hover {
     padding: 9em 20em 6em 20em;
   }
 }
-
-.circle {
-  animation: circleAnim 0.5s infinite alternate-reverse;
-}
-
-@-webkit-keyframes circleAnim {
-  from {
-    cy: "23.5";
-    z-index: 5;
-    begin: "0s";
-  }
-  to {
-    cy: "30";
-  }
-}
-
-@keyframes circleAnim {
-  from {
-    cy: "23.5";
-    z-index: 5;
-    begin: "0s";
-  }
-  to {
-    cy: "30";
-  }
-}
 /*# sourceMappingURL=main.css.map */
