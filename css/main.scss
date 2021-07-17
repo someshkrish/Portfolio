@@ -35,6 +35,10 @@ img {
     color: white;
   }
 }
+
+.hero-span{
+  font-weight: bold;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -56,8 +60,7 @@ header {
 }
 .social-header,
 .hero-design,
-.feature-svg,
-.project-svg {
+.feature-svg{
   display: none;
 }
 
@@ -148,7 +151,7 @@ section {
 }
 
 .portfolio-container a img {
-  border-radius: 1em;
+  border-radius: 0.5em;
   margin-bottom: 2em;
 }
 .footer {
@@ -184,7 +187,34 @@ button.myBtn:hover {
   transform: scale(1.25);
 }
 
+@media only screen and (max-width: 450px) {
+  header .logo {
+    display: none;
+  }
+  header nav{
+    width: 100%;
+
+    ul {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hero {
+    height: 50vh;
+  }
+  .featured  a .pro-image{
+    width: 80%;
+  }
+  .portfolio .portfolio-container a .pro-image {
+    width: 75%;
+  }
+}
 @media only screen and (min-width: 800px) {
+  .featured  a .pro-image{
+    width: 100%;
+  }
   .featured,
   .portfolio {
     text-align: left;
@@ -199,7 +229,7 @@ button.myBtn:hover {
   .left,
   .portfolio-left {
     display: grid;
-    place-content: center;
+    align-items: center;
   }
 
   .right {
@@ -254,10 +284,6 @@ button.myBtn:hover {
 }
 
 @media only screen and (min-width: 1140px) {
-  .hero {
-    height: 70vh;
-  }
-
   .nav-container {
     display: grid;
     grid-template-columns: 66% auto;
@@ -296,6 +322,7 @@ button.myBtn:hover {
     grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
+    height: 100vh;
 
     .content {
       background: #6e00ff;
@@ -316,7 +343,7 @@ button.myBtn:hover {
     width: 100%;
   }
 
-  .portfolio img {
+  .portfolio .pro-image {
     float: right;
     max-width: 500px;
   }
