@@ -14,9 +14,9 @@
         <a href="index.html" class="logo">Somesh</a>
         <nav>
           <ul>
-            <li><a href="#my-skills">My Skills</a></li>
-            <li><a href="#my-works">My Works</a></li>
-            <li><a href="#footer">Hire Me</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#my-works">Works</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -35,11 +35,6 @@
           <li class="header-img">
             <a href="https://www.linkedin.com/in/somesh-selvakumar-0488b113b"
               ><img src="img/linkedin.png" alt="linkedin"
-            /></a>
-          </li>
-          <li class="header-img">
-            <a href="https://twitter.com/Somesh14361155"
-              ><img src="img/twitter.png" alt="twitter"
             /></a>
           </li>
         </ul>
@@ -218,50 +213,32 @@
         <a href="https://bit.ly/3vkwZSZ">
           <img src="img/budgety.png" alt="budgety-app" class="pro-image" />
         </a>
-        <svg
-          width="258"
-          height="170"
-          viewBox="0 0 258 170"
-          fill="none"
-          class="project-svg"
-        >
-          <rect
-            x="169.706"
-            y="84.8528"
-            width="120"
-            height="120"
-            transform="rotate(135 169.706 84.8528)"
-            fill="#6E00FF"
-            fill-opacity="0.34"
-          />
-          <rect
-            x="254.706"
-            y="84.8528"
-            width="120"
-            height="120"
-            transform="rotate(135 254.706 84.8528)"
-            fill="#6E00FF"
-          />
-          <rect
-            width="61.0332"
-            height="61.0332"
-            transform="matrix(-0.718877 0.695137 -0.718877 -0.695137 257.706 84.2792)"
-            fill="white"
-          />
-        </svg>
+      </div>
+      <div class="portfolio-container transition5">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="featured-title">Foodie's Delight</p>
+            <p class="featured-desc">
+              A recipe searching application. Powered by tasty API.
+            </p>
+          </div>
+        </div>
+        <a href="https://bit.ly/3hHXX2O">
+          <img src="img/Foodies delight.png" alt="recipe-search-app" class="pro-image" />
+        </a>
       </div>
     </section>
 
     <section class="footer" id="footer">
-      <p class="transition5">
-        Like what you’ve seen? <span class="transition5">Hire Me!!!</span>
+      <p class="transition6">
+        Like what you’ve seen? <span class="transition6">Hire Me!!!</span>
       </p>
-      <p class="transition5">Connect with me through Linkedin or Twitter.</p>
-      <p class="transition5">Looking forward to work with you...</p>
+      <p class="transition6">Connect with me through Linkedin.</p>
+      <p class="transition6">Looking forward to work with you...</p>
     </section>
 
     <div class="footer-icons">
-      <ul class="transition6">
+      <ul class="transition7">
         <li>
           <a href="https://somesh4553.medium.com"
             ><img src="img/medium.png" alt="medium"
@@ -277,13 +254,8 @@
             ><img src="img/linkedin.png" alt="linkedin"
           /></a>
         </li>
-        <li>
-          <a href="https://twitter.com/Somesh14361155"
-            ><img src="img/twitter.png" alt="twitter"
-          /></a>
-        </li>
       </ul>
-      <p class="transition6">© Copyright 2021 somesh</p>
+      <p class="transition7">© Copyright 2021 somesh</p>
     </div>
     <button onclick="topFunction()" id="myBtn" class="myBtn">Top</button>
     <script src="index.js"></script>
@@ -372,12 +344,22 @@
         },
         y: 50,
         opacity: 0,
-        duration: 0.8,
+        duration: 1.2,
         stagger: 0.3,
       });
       gsap.from(".transition6", {
         scrollTrigger: {
           trigger: ".transition6",
+          start: "top bottom",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.3,
+      });
+      gsap.from(".transition7", {
+        scrollTrigger: {
+          trigger: ".transition7",
           start: "top bottom",
         },
         y: 50,
